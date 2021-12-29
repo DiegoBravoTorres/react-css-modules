@@ -10,7 +10,7 @@ import Title from './components/title/title';
 
 // Data
 import facts from './data/NASA_facts.json'; 
-import News from './News';
+import Home from './home';
 
 //const newsURL = 'https://newsapi.org/v2/everything?q=tesla&from=2021-11-29&sortBy=publishedAt&apiKey=' + process.env.NEWS_API_KEY;
 //import news from 'https://newsapi.org/v2/everything?q=tesla&from=2021-11-29&sortBy=publishedAt&apiKey=59fbe883f3c5492996ec0806ac54bbdf';
@@ -35,7 +35,7 @@ class App extends Component{
         <div className={styles.App}>
           
           <Title/>
-          <News/>
+          <Home/>
           <Background/>
            {/* <Grid facts={this.state.facts} updateClick={this.updateClick.bind(this)}/>
             <Rocket/>
