@@ -7,7 +7,6 @@ export default class App extends React.Component{
         return (
             <div>
                 <img src="../shuttle.png" alt="shutle" className={styles.img}></img>
-
             </div>
 
         );
