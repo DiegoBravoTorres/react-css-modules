@@ -1,0 +1,7 @@
+.box {
+  width: 45%;
+  height: 109%;
+  background-color: #ececec;
+  position: fixed;
+  transform: translateX(123%);
+}
