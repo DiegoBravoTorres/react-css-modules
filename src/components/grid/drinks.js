@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './grid.module.css';
 
-
-
+import Header from '../nav/header';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Footer from '../nav/footer';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //import InfoBox from './infoBox'
@@ -49,18 +50,19 @@ class Drinks extends React.Component {
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
-      return <div>Loading...</div>;
+      return <div className={styles.loading}>Loading</div>;
     } else {
       return (
         
 <div key={this.props.Type}>
+<Header/>
    <h3 className={styles.title}>
       {this.props.Type} 
    </h3>
    <Container key={this.props.Type}>
       <Row className={styles.drinkscont}  >
          {drinks.map(drink => (
-         <Col md={3} key={drink.id}>
+         <Col md={3} sm={6} xs={6} key={drink.id}>
          <div className={styles.card} onClick={() => this.updateBox(drink)} key={drink.id}>
          <h5 key={drink.id}>
             {drink.strDrink}
@@ -86,7 +88,7 @@ class Drinks extends React.Component {
     }
       </Row>
    </Container>
-   
+   <Footer/>
 </div>
 
 

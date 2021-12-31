@@ -12,6 +12,13 @@
   padding-bottom: 30px;
 }
 
+.footer {
+  color: #707071;
+  background-color: #f8f9fa;
+  padding: 15px;
+  font-size: 13px;
+}
+
 @media (max-width: 810px) {
   .title {
     font-size: 3em;
