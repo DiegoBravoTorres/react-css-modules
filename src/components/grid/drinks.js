@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './grid.module.css';
-import Box from './infoBox';
 
 
 
@@ -9,6 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+//import InfoBox from './infoBox'
 
 
 class Drinks extends React.Component {
@@ -16,13 +16,10 @@ class Drinks extends React.Component {
     super(props);
     this.state = {
       error: null,
-      isLoaded: false,
-      drinks: []
+      drinks: [],
+      selectedDrink: "wel"
     };
   }
-
-  
-
   componentDidMount() {
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${this.props.Type.toLowerCase()}`)
       .then(res => res.json())
@@ -43,8 +40,8 @@ class Drinks extends React.Component {
       )
   }
 
-  updateBox(name) {
-    console.log('Update Box' + name.strDrink);
+  updateBox(drink){
+    console.log(drink.strDrink);
   }
 
   render() {
@@ -57,28 +54,39 @@ class Drinks extends React.Component {
       return (
         
 <div key={this.props.Type}>
-
    <h3 className={styles.title}>
       {this.props.Type} 
    </h3>
    <Container key={this.props.Type}>
       <Row className={styles.drinkscont}  >
          {drinks.map(drink => (
-         <Col md={6} key={drink.id}>
+         <Col md={3} key={drink.id}>
          <div className={styles.card} onClick={() => this.updateBox(drink)} key={drink.id}>
          <h5 key={drink.id}>
             {drink.strDrink}
          </h5>
          <p className={styles.description} key={drink.id}>
             {drink.strCategory}
+         </p>
+         </div>
 
+
+         <div className={styles.cardInfo} onClick={() => this.updateBox(drink)} key={drink.id}>
+         <p className={styles.description} key={drink.id}>
+            {drink.strIngredient1} <strong>{drink.strMeasure1} </strong><br></br>
+            {drink.strIngredient2} <strong>{drink.strMeasure2} </strong><br></br>
+            {drink.strIngredient3} <strong>{drink.strMeasure3} </strong><br></br>
+            {drink.strIngredient4} <strong>{drink.strMeasure4} </strong><br></br>
+            {drink.strIngredient5} <strong>{drink.strMeasure5} </strong><br></br>
+            {drink.strIngredient6} <strong>{drink.strMeasure6} </strong><br></br>
          </p>
          </div>
          </Col>
-         ))}
+         ))
+    }
       </Row>
    </Container>
-   <Box/>
+   
 </div>
 
 
