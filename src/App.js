@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // Data
 //import facts from './data/NASA_facts.json'; 
+import Home from './components/home/home';
 import Drinks from './components/grid/drinks';
 
 
@@ -26,14 +27,16 @@ class App extends Component{
   render(){
     return(
         <div className={styles.App}>
+         
         <BrowserRouter>
            <Routes>
+           <Route exact path="/" element={ <Home/>} />
               <Route exact path="/margarita" element={<Drinks Type='Margarita'/>} />
               <Route exact path="/mojito" element={<Drinks Type='Mojito'/>} />
               <Route exact path="/martini" element={<Drinks Type='Martini'/>} />
               <Route exact path="/bloody" element={<Drinks Type='Bloody'/>} />
               <Route exact path="/pina" element={<Drinks Type='Pina Colada'/>} />
-              <Route exact path="/daiquiri" element={<Drinks Type='Daiquiri'/>} />
+            
           </Routes>
           </BrowserRouter>
           
