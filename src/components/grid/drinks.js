@@ -55,9 +55,11 @@ class Drinks extends React.Component {
         
 <div key={this.props.Type}>
 <Header/>
-   <h3 className={styles.title}>
+   <h3 className={styles.head}>
       {this.props.Type} 
    </h3>
+
+   <hr className={styles.line}/>
    <Container key={this.props.Type}>
       <Row className={styles.drinkscont}  >
          {drinks.map(drink => (

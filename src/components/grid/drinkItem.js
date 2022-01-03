@@ -1,53 +1,65 @@
-import React from 'react';
-import styles from './grid.module.css';
-import { Component } from 'react';
+import React from "react";
+import styles from "./grid.module.css";
+import { Component } from "react";
 
 class Drink extends Component {
     constructor(props) {
-      super(props)
-      this.title = React.createRef()
-      this.changeColor = this.changeColor.bind( this )
+        super(props);
+        this.title = React.createRef();
+        this.state = { clicked: false };
+        this.changeDisplay = this.changeDisplay.bind(this);
     }
-  
-    changeColor() {
-      console.log(this.title)
-      if(this.title.current.style.opacity === '1'){
-        this.title.current.style.opacity = '0'
-      }else{
-        this.title.current.style.opacity = '1'
-      }
-      
+
+    changeDisplay() {
+        this.setState((prevState) => ({
+            clicked: !prevState.clicked,
+        }));
+
+        console.log(this.state.clicked);
     }
     render() {
-      return (
-        <div className="App">
+        let drink = this.props.Item;
 
-<div  className={styles.card} /*onClick={() => this.updateBox(drink)}*/ key={this.props.Item.id}>
-         <h5 key={this.props.Item.id}>
-            {this.props.Item.strDrink}
-         </h5>
-         <p className={styles.description} key={this.props.Item.id}>
-            {this.props.Item.strCategory}
-         </p>
-         </div>
-
-
-         <div ref = { this.title } className={styles.cardInfo} onClick = { this.changeColor } key={this.props.Item.id}>
-         <p className={styles.description} key={this.props.Item.id}>
-            {this.props.Item.strIngredient1} <strong>{this.props.Item.strMeasure1} </strong><br></br>
-            {this.props.Item.strIngredient2} <strong>{this.props.Item.strMeasure2} </strong><br></br>
-            {this.props.Item.strIngredient3} <strong>{this.props.Item.strMeasure3} </strong><br></br>
-            {this.props.Item.strIngredient4} <strong>{this.props.Item.strMeasure4} </strong><br></br>
-            {this.props.Item.strIngredient5} <strong>{this.props.Item.strMeasure5} </strong><br></br>
-            {this.props.Item.strIngredient6} <strong>{this.props.Item.strMeasure6} </strong><br></br>
-         </p>
-         </div>
-
-     
- 
-        </div>
-      );
+        if (!this.state.clicked) {
+            return (
+                <div className="App">
+                    <div ref={this.title} onClick={this.changeDisplay} className={styles.card} key={drink.id}>
+                        <h5 className={styles.title} key={drink.id}>{drink.strDrink}</h5>
+                        <p className={styles.description} key={drink.id}>
+                            {drink.strCategory}
+                            <br />
+                            {drink.strGlass}
+                        </p>
+                    </div>
+                </div>
+            );
+        } else {
+            return (
+                <div className="App">
+                    <div ref={this.title} className={styles.cardInfo} key={drink.id} onClick={this.changeDisplay}>
+                        <p className={styles.description} key={drink.id}>
+                          {drink.strIngredient6} <strong>{drink.strMeasure6} </strong>
+                            <br></br>
+                            
+                        {drink.strIngredient5} <strong>{drink.strMeasure5} </strong>
+                            <br></br>
+                        {drink.strIngredient3} <strong>{drink.strMeasure3} </strong>
+                            <br></br>
+                            
+                            {drink.strIngredient1} <strong>{drink.strMeasure1} </strong>
+                            <br></br>
+                            {drink.strIngredient2} <strong>{drink.strMeasure2} </strong>
+                            <br></br>
+                            
+                            {drink.strIngredient4} <strong>{drink.strMeasure4} </strong>
+                           
+                            
+                        </p>
+                    </div>
+                </div>
+            );
+        }
     }
-  }
+}
 
-  export default Drink;
+export default Drink;

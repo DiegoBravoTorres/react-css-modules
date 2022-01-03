@@ -36,6 +36,9 @@ class App extends Component{
               <Route exact path="/martini" element={<Drinks Type='Martini'/>} />
               <Route exact path="/bloody" element={<Drinks Type='Bloody'/>} />
               <Route exact path="/pina" element={<Drinks Type='Pina Colada'/>} />
+              <Route exact path="/gin" element={<Drinks Type='Gin'/>} />
+              <Route exact path="/vampiro" element={<Drinks Type='Vampiro'/>} />
+              <Route exact path="/daiquiri" element={<Drinks Type='Daiquiri'/>} />
             
           </Routes>
           </BrowserRouter>

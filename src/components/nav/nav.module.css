@@ -1,15 +1,89 @@
 .title {
   font-size: 1.25rem;
   color: black;
-
   width: 100%;
-  margin-bottom: 50px;
-
   box-shadow: 3;
-  margin-top: 0;
-  margin-bottom: 0;
   padding-top: 0.67em;
-  padding-bottom: 30px;
+  margin-right: 12%;
+}
+
+.navbar {
+  display: flex;
+  flex-basis: auto;
+  color: #707071;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.hamburguer {
+  font-size: 23px;
+  margin-left: 35px;
+  color: black;
+  border-style: solid;
+  border-width: 1px;
+  padding-bottom: 8px;
+  padding-left: 17px;
+  padding-right: 18px;
+  border-radius: 25px;
+  margin-top: 16px;
+  cursor: pointer;
+  opacity: 70%;
+}
+
+.hamburguer:hover {
+  opacity: 100%;
+  transition: 0.6s;
+}
+
+.hamburguer small {
+  font-size: 18px;
+  margin-left: 12px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlaycontent {
+  position: relative;
+  top: 10%;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.overlay .closebtn:hover {
+  color: white;
 }
 
 .footer {
@@ -17,10 +91,20 @@
   background-color: #f8f9fa;
   padding: 15px;
   font-size: 13px;
+  margin-top: 38px;
 }
 
-@media (max-width: 810px) {
+@media screen and (max-height: 810px) {
+  .overlay {
+    font-size: 10px;
+  }
+  .overlay .closebtn {
+    font-size: 20px;
+    top: 15px;
+    right: 35px;
+  }
+
   .title {
-    font-size: 3em;
+    font-size: 1.75rem;
   }
 }

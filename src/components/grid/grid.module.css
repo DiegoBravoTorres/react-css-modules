@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap");
+
 .loading {
   height: 100%;
   font-size: 30px;
@@ -15,32 +18,42 @@
   width: 100%;
 }
 
-.title {
-  text-align: left;
-  padding-left: 12.5%;
+.head {
+  text-align: center;
   margin-bottom: 30px;
-  margin-top: 36px;
+  margin-top: 50px;
+  font-family: "Cherry Swash", cursive;
+  font-size: 37px;
+}
+
+.title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Cherry Swash", cursive;
+  font-weight: 700;
 }
 
 .card {
-  padding: 40px 0px;
   margin: 0;
-  box-shadow: 12px 10px 12px 3px rgba(240, 240, 240, 0.18);
-  height: 50%;
+  box-shadow: 12px 10px 12px 3px rgba(230, 228, 224, 0.18);
+  padding: 15px;
+  transition: 1s;
+  border-radius: 33px;
 }
 
 .cardInfo {
-  background-color: #eae9e5;
-  box-shadow: 12px 10px 12px 3px rgba(240, 240, 240, 0.18);
-  transform: translateY(-147px);
-  padding: 13px 0px 2px;
-  opacity: 0%;
+  margin: 0;
+  box-shadow: 12px 10px 12px 3px rgba(230, 228, 224, 0.68);
+  padding: 15px;
+  transition: 1s;
+  border-radius: 33px;
 }
 
-.cardInfo:hover {
-  box-shadow: 22px 27px 12px 3px rgba(240, 240, 240, 0.33);
-  opacity: 100%;
-  transition: 0.3s;
+.line {
+  width: 76%;
+  text-align: left;
+  margin-left: 12.5%;
+  margin-bottom: 50px;
 }
 
 .description {
