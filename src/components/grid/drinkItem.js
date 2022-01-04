@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./grid.module.css";
+import DrnkImg from "./drinkImg";
 import { Component } from "react";
 
 class Drink extends Component {
@@ -28,7 +29,9 @@ class Drink extends Component {
                         <p className={styles.description} key={drink.id}>
                             {drink.strCategory}
                             <br />
-                            {drink.strGlass}
+                          
+                            <DrnkImg drinkType={drink.strGlass} />
+                            
                         </p>
                     </div>
                 </div>

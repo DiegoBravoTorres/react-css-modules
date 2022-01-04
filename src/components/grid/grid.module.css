@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400&display=swap");
+
 .loading {
   height: 100%;
   font-size: 30px;
@@ -24,11 +27,12 @@
   margin-top: 50px;
   font-family: "Cherry Swash", cursive;
   font-size: 37px;
+  font-weight: 600;
 }
 
 .title {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-family: "Cherry Swash", cursive;
   font-weight: 700;
 }
@@ -39,6 +43,7 @@
   padding: 15px;
   transition: 1s;
   border-radius: 33px;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .cardInfo {
@@ -47,6 +52,7 @@
   padding: 15px;
   transition: 1s;
   border-radius: 33px;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .line {
@@ -54,6 +60,8 @@
   text-align: left;
   margin-left: 12.5%;
   margin-bottom: 50px;
+  height: 1.3px;
+  opacity: 1;
 }
 
 .description {

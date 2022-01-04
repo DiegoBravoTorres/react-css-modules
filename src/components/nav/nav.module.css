@@ -1,10 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400&display=swap");
+
 .title {
+  font-size: 1.25rem;
+  color: black;
+  padding-top: 0.67em;
+  margin-left: 31%;
+  width: 13%;
+  height: 13%;
+}
+
+.subtitle {
   font-size: 1.25rem;
   color: black;
   width: 100%;
   box-shadow: 3;
   padding-top: 0.67em;
   margin-right: 12%;
+  font-family: "Cherry Swash", cursive;
 }
 
 .navbar {
@@ -13,21 +29,23 @@
   color: #707071;
   background-color: #f8f9fa;
   text-align: center;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .hamburguer {
-  font-size: 23px;
+  font-size: 21px;
   margin-left: 35px;
   color: black;
   border-style: solid;
   border-width: 1px;
-  padding-bottom: 8px;
-  padding-left: 17px;
-  padding-right: 18px;
-  border-radius: 25px;
-  margin-top: 16px;
+  padding-bottom: 7px;
+  padding-left: 18px;
+  padding-right: 16px;
+  border-radius: 37px;
+  margin-top: 14px;
   cursor: pointer;
   opacity: 70%;
+  border-color: #000000;
 }
 
 .hamburguer:hover {
@@ -36,8 +54,16 @@
 }
 
 .hamburguer small {
-  font-size: 18px;
-  margin-left: 12px;
+  font-size: 12px;
+  margin-left: 42px;
+  margin-right: 5px;
+}
+
+.hamburguer img {
+  position: absolute;
+  width: 32px;
+  top: 22px;
+  height: 24px;
 }
 
 .overlay {
@@ -58,6 +84,7 @@
   bottom: 10%;
   width: 100%;
   text-align: center;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .overlay a {
