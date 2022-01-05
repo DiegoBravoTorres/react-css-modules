@@ -5,12 +5,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400&display=swap");
 
 .title {
-  font-size: 1.25rem;
-  color: black;
-  padding-top: 0.67em;
+  margin-top: 10px;
   margin-left: 31%;
-  width: 13%;
-  height: 13%;
+  width: 176px;
+  height: 50px;
 }
 
 .subtitle {
@@ -120,10 +118,22 @@
   background-color: #f8f9fa;
   padding: 15px;
   font-size: 13px;
-  margin-top: 38px;
+  margin-top: 6%;
 }
 
-@media screen and (max-height: 810px) {
+@media (max-width: 810px) {
+  .hamburguer {
+    font-size: 20px;
+    margin-left: 15px;
+    padding-left: 13px;
+    padding-right: 11px;
+  }
+
+  .hamburguer small {
+    font-size: 12px;
+    margin-left: 41px;
+    margin-right: 6px;
+  }
   .overlay {
     font-size: 10px;
   }
@@ -134,6 +144,20 @@
   }
 
   .title {
-    font-size: 1.75rem;
+    margin-left: 13%;
+  }
+  .overlay a {
+    font-size: 23px;
+  }
+
+  .footer {
+    font-size: 10px;
+    margin-top: 25%;
+  }
+}
+
+@media (min-width: 810px) and (max-width: 1080px) {
+  .title {
+    margin-left: 26%;
   }
 }

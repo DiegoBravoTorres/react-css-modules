@@ -7,21 +7,20 @@ class Drink extends Component {
     constructor(props) {
         super(props);
         this.title = React.createRef();
-        this.state = { clicked: false };
+        this.state = { step: 1 };
         this.changeDisplay = this.changeDisplay.bind(this);
     }
 
     changeDisplay() {
         this.setState((prevState) => ({
-            clicked: !prevState.clicked,
+            step: (prevState.step + 1)  % 3
         }));
-
-        console.log(this.state.clicked);
+        console.log(this.state.step);
     }
     render() {
         let drink = this.props.Item;
 
-        if (!this.state.clicked) {
+        if (this.state.step === 1) {
             return (
                 <div className="App">
                     <div ref={this.title} onClick={this.changeDisplay} className={styles.card} key={drink.id}>
@@ -30,21 +29,15 @@ class Drink extends Component {
                             {drink.strCategory}
                             <br></br>
                             <DrnkImg drinkType={drink.strGlass} />
-                            
                         </p>
                     </div>
                 </div>
             );
-        } else {
+        } else if (this.state.step === 2){
             return (
                 <div className="App">
                     <div ref={this.title} className={styles.cardInfo} key={drink.id} onClick={this.changeDisplay}>
                         <p className={styles.description} key={drink.id}>
-                          
-                            
-                        
-                        
-                            
                             {drink.strIngredient1} <strong>{drink.strMeasure1} </strong>
                             <br></br>
                             {drink.strIngredient2} <strong>{drink.strMeasure2} </strong>
@@ -56,14 +49,22 @@ class Drink extends Component {
                             <br></br>
                             {drink.strIngredient5} <strong>{drink.strMeasure5} </strong>
                             <br></br>
-                            {drink.strIngredient6} <strong>{drink.strMeasure6} </strong>
-                            
-                           
-                            
+                            {drink.strIngredient6} <strong>{drink.strMeasure6} </strong>                          
                         </p>
                     </div>
                 </div>
             );
+        }else{
+            return(
+                <div className="App">
+                    <div ref={this.title} className={styles.cardInst} key={drink.id} onClick={this.changeDisplay}>
+                        <p className={styles.instructions} key={drink.id}>
+                        {drink.strInstructions}
+                        </p>
+                    </div>
+                </div>
+
+            )
         }
     }
 }

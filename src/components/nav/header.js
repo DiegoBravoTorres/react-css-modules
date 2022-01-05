@@ -74,26 +74,35 @@ class NavBar extends Component {
                     </p>
                     <div className={styles.overlaycontent}>
                         <a href="/">Home</a>
-                        
-                        
+
                         <a href="/bloody">Bloody</a>
                         <a href="/caipirinha">Caipirinha</a>
-                        <a href="/iced-tea">Iced Tea</a>
+                        <a href="/chocolate">Chocolate</a>
+                        <a href="/collins">Collins</a>
                         <a href="/daiquiri">Daiquiri</a>
-                        <a href="/gin">Gin</a>
+                        <a href="/irish">Irish Style</a>
+                        <a href="/fizz">Fizz</a>
                         <a href="/gimlet">Gimlet</a>
+                        <a href="/gin">Gin</a>
+                        <a href="/iced-tea">Iced Tea</a>
+                        <a href="/lemonade">Lemonade</a>
+                        <a href="/mimosa">Mimosa</a>
+                        <a href="/mai-tai">Mai Tai</a>
                         <a href="/manhattan">Manhattan</a>
                         <a href="/margarita">Margarita</a>
-                        <a href="/mai-tai">Mai Tai</a>
                         <a href="/martini">Martini</a>
+                        <a href="/martinez">Martinez</a>
                         <a href="/mojito">Mojito</a>
                         <a href="/mule">Mule</a>
                         <a href="/negroni">Negroni</a>
                         <a href="/paloma">Paloma</a>
                         <a href="/pina">Pina Colada</a>
+                        <a href="/punch">Punch</a>
+                        <a href="/sangria">Sangria</a>
+                        <a href="/sazerac">Sazerac</a>
+                        <a href="/sidecar">Sidecar</a>
                         <a href="/spritz">Spritz</a>
                         <a href="/vampiro">Vampiro</a>
-                        
                     </div>
                 </div>
             </div>

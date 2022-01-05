@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400&display=swap");
+
+.main {
+  padding: 70px 50px;
+}
+
+.main h2 {
+  font-size: 40px;
+  font-family: "Cherry Swash", cursive;
+  font-weight: 900;
+  text-align: left;
+  padding-top: 70px;
+}
+
+.main p {
+  text-align: left;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.secondary {
+  text-align: center;
+  background-color: white;
+  padding: 30px 50px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.secondary h2 {
+  font-size: 20px;
+}
+
+.secondary p {
+  font-size: 15px;
+  margin: 10px;
+}
+
+.image {
+  width: 400px;
+}
+
+@media (max-width: 810px) {
+  .main {
+    padding: 20px;
+  }
+
+  .main h2 {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .main p {
+    text-align: center;
+  }
+
+  .image {
+    width: 300px;
+  }
+}
