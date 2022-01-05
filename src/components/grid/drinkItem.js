@@ -28,8 +28,7 @@ class Drink extends Component {
                         <h5 className={styles.title} key={drink.id}>{drink.strDrink}</h5>
                         <p className={styles.description} key={drink.id}>
                             {drink.strCategory}
-                            <br />
-                          
+                            <br></br>
                             <DrnkImg drinkType={drink.strGlass} />
                             
                         </p>
@@ -41,20 +40,24 @@ class Drink extends Component {
                 <div className="App">
                     <div ref={this.title} className={styles.cardInfo} key={drink.id} onClick={this.changeDisplay}>
                         <p className={styles.description} key={drink.id}>
-                          {drink.strIngredient6} <strong>{drink.strMeasure6} </strong>
-                            <br></br>
+                          
                             
-                        {drink.strIngredient5} <strong>{drink.strMeasure5} </strong>
-                            <br></br>
-                        {drink.strIngredient3} <strong>{drink.strMeasure3} </strong>
-                            <br></br>
+                        
+                        
                             
                             {drink.strIngredient1} <strong>{drink.strMeasure1} </strong>
                             <br></br>
                             {drink.strIngredient2} <strong>{drink.strMeasure2} </strong>
                             <br></br>
+                            {drink.strIngredient3} <strong>{drink.strMeasure3} </strong>
+                            <br></br>
                             
                             {drink.strIngredient4} <strong>{drink.strMeasure4} </strong>
+                            <br></br>
+                            {drink.strIngredient5} <strong>{drink.strMeasure5} </strong>
+                            <br></br>
+                            {drink.strIngredient6} <strong>{drink.strMeasure6} </strong>
+                            
                            
                             
                         </p>

@@ -18,8 +18,7 @@ class Drinks extends React.Component {
     super(props);
     this.state = {
       error: null,
-      drinks: [],
-      selectedDrink: "wel"
+      drinks: []
     };
 
   }

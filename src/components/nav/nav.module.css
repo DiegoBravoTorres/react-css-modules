@@ -80,7 +80,7 @@
 
 .overlaycontent {
   position: relative;
-  top: 10%;
+  top: 11%;
   bottom: 10%;
   width: 100%;
   text-align: center;
@@ -103,8 +103,10 @@
 
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  font-size: 43px !important;
+  top: -7px !important;
+  right: 30px;
+  color: #818181;
   font-size: 60px;
   cursor: pointer;
 }
