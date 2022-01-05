@@ -33,7 +33,9 @@ class App extends Component{
            <Route exact path="/" element={ <Home/>} />
               <Route exact path="/margarita" element={<Drinks Type='Margarita'/>} />
               <Route exact path="/mojito" element={<Drinks Type='Mojito'/>} />
+              <Route exact path="/mai-tai" element={<Drinks Type='Mai Tai'/>} />
               <Route exact path="/martini" element={<Drinks Type='Martini'/>} />
+              
               <Route exact path="/bloody" element={<Drinks Type='Bloody'/>} />
               <Route exact path="/pina" element={<Drinks Type='Pina Colada'/>} />
               <Route exact path="/gin" element={<Drinks Type='Gin'/>} />
