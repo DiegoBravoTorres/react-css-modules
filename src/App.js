@@ -31,14 +31,26 @@ class App extends Component{
         <BrowserRouter>
            <Routes>
            <Route exact path="/" element={ <Home/>} />
+        
+           
+              <Route exact path="/caipirinha" element={<Drinks Type='Caipirinha'/>} />
+              <Route exact path="/bellini" element={<Drinks Type='Bellini'/>} />
+              
+              <Route exact path="/iced-tea" element={<Drinks Type='Iced Tea'/>} />
+              <Route exact path="/manhattan" element={<Drinks Type='Manhattan'/>} />
               <Route exact path="/margarita" element={<Drinks Type='Margarita'/>} />
               <Route exact path="/mojito" element={<Drinks Type='Mojito'/>} />
               <Route exact path="/mai-tai" element={<Drinks Type='Mai Tai'/>} />
               <Route exact path="/martini" element={<Drinks Type='Martini'/>} />
+              <Route exact path="/mule" element={<Drinks Type='Mule'/>} />
+              <Route exact path="/negroni" element={<Drinks Type='Negroni'/>} />
               
               <Route exact path="/bloody" element={<Drinks Type='Bloody'/>} />
+              <Route exact path="/paloma" element={<Drinks Type='Paloma'/>} />
               <Route exact path="/pina" element={<Drinks Type='Pina Colada'/>} />
               <Route exact path="/gin" element={<Drinks Type='Gin'/>} />
+              <Route exact path="/gimlet" element={<Drinks Type='Gimlet'/>} />
+              <Route exact path="/spritz" element={<Drinks Type='Spritz'/>} />
               <Route exact path="/vampiro" element={<Drinks Type='Vampiro'/>} />
               <Route exact path="/daiquiri" element={<Drinks Type='Daiquiri'/>} />
             

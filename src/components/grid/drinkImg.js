@@ -4,7 +4,7 @@ import styles from "./drinkImg.module.css";
 const drinkImg = props => {
   let { drinkType } = props;
 
-  if (drinkType === "Cocktail glass" || drinkType === "Cocktail Glass") {
+  if (drinkType === "Cocktail glass" || drinkType === "Cocktail Glass" || drinkType === "Martini Glass") {
     return <img className={styles.icons} src={require("../../images/cocktails/Cocktail-cocktail.png")} alt={ drinkType }></img>;
   } else 
   if (drinkType === "Old-Fashioned glass" || drinkType === "Old-fashioned glass") {
@@ -19,10 +19,13 @@ const drinkImg = props => {
   if (drinkType === "Highball glass" || drinkType === "Highball Glass") {
     return <img className={styles.icons} src={require("../../images/cocktails/Cocktail-highball.png")} alt={ drinkType }></img>;
   } else 
-  if (drinkType === "White wine glass") {
+  if (drinkType === "White wine glass" || drinkType === "Wine Glass") {
     return <img className={styles.icons} src={require("../../images/cocktails/Cocktail-white-wine.png")} alt={ drinkType }></img>;
   } else 
-  if (drinkType === "Champagne flute") {
+  if (drinkType === "Copper mug" || drinkType === "Copper Mug") {
+    return <img className={styles.icons} src={require("../../images/cocktails/Cocktail-copper.png")} alt={ drinkType }></img>;
+  } else 
+  if (drinkType === "Champagne flute" || drinkType === "Champagne Flute") {
     return <img className={styles.icons} src={require("../../images/cocktails/Cocktail-champagne.png")} alt={ drinkType }></img>;
   } else 
   if (drinkType === "Whiskey sour glass") {
