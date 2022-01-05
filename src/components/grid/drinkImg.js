@@ -34,8 +34,7 @@ const drinkImg = props => {
    if (drinkType === "Punch bowl") {
     return <img className={styles.icons} src={require("../../images/cocktails/Cocktail-punch.png")} alt={ drinkType }></img>;
   } else  {
-    return <small>{drinkType}</small>;
-    //<img className={styles.icons} src={require("../../images/cocktails/Cocktail-collins.png")} alt={ drinkType }></img>;;
+    return <img className={styles.icons} src={require("../../images/cocktails/Cocktail-collins.png")} alt={ drinkType }></img>;;
   }
 };
 
