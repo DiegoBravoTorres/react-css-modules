@@ -18,7 +18,7 @@ class Home extends Component{
                         <Row className={styles.main}>
                                 <Col md={6} sm={12} xs={12} >
                                 <h2>Find the best selection of Cocktails Recipes</h2>
-                                <p>Keep browsing our menu and find recipes by type of drink.</p>
+                                <p>Browse our menu and find recipes by type of drink.</p>
                                 </Col>
                                 <Col md={6} sm={12} xs={12} >
                                 <img src={require("../../images/home-bck.png")} className={styles.image} alt="Home Background"></img>
