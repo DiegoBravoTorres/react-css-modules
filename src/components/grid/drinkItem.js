@@ -7,7 +7,7 @@ class Drink extends Component {
     constructor(props) {
         super(props);
         this.title = React.createRef();
-        this.state = { step: 1 };
+        this.state = { step: 0 };
         this.changeDisplay = this.changeDisplay.bind(this);
     }
 
@@ -20,7 +20,7 @@ class Drink extends Component {
     render() {
         let drink = this.props.Item;
 
-        if (this.state.step === 1) {
+        if (this.state.step === 0) {
             return (
                 <div className="App">
                     <div ref={this.title} onClick={this.changeDisplay} className={styles.card} key={drink.id}>
@@ -33,7 +33,7 @@ class Drink extends Component {
                     </div>
                 </div>
             );
-        } else if (this.state.step === 2){
+        } else if (this.state.step === 1){
             return (
                 <div className="App">
                     <div ref={this.title} className={styles.cardInfo} key={drink.id} onClick={this.changeDisplay}>
@@ -44,7 +44,6 @@ class Drink extends Component {
                             <br></br>
                             {drink.strIngredient3} <strong>{drink.strMeasure3} </strong>
                             <br></br>
-                            
                             {drink.strIngredient4} <strong>{drink.strMeasure4} </strong>
                             <br></br>
                             {drink.strIngredient5} <strong>{drink.strMeasure5} </strong>

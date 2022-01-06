@@ -16,6 +16,7 @@ class Drinks extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            isLoaded: false,
             error: null,
             drinks: [],
         };
@@ -37,28 +38,27 @@ class Drinks extends React.Component {
                         error,
                     });
                 }
-            );
+            ).catch(err => console.log(err));
     }
 
     render() {
         const { error, isLoaded, drinks } = this.state;
         if (error) {
-            return <div>Error: {error.message}</div>;
+            return <div key={error.message}>Error: {error.message}</div>;
         } else if (!isLoaded) {
-            return <div className={styles.loading}>
+            return <div key={"loading"} className={styles.loading}>
                <img src={require("../../images/Cocktail-highball-loading.gif")} className={styles.imgloading} alt="Smart Cocktail logo"></img>
               Loading</div>;
         } else {
             return (
-                <div key={this.props.Type}>
+                <div >
                     <Header />
                     <h3 className={styles.head}>{this.props.Type}</h3>
-
                     <hr className={styles.line} />
-                    <Container key={this.props.Type}>
-                        <Row className={styles.drinkscont}>
+                    <Container >
+                        <Row className={styles.drinkscont} >
                             {drinks.map((drink) => (
-                                <Col md={3} sm={6} xs={6} key={drink.id}>
+                                <Col md={3} sm={6} xs={6} key={`Sst ${drink.strDrink}`}>
                                     <Drink Item={drink} />
                                 </Col>
                             ))}
