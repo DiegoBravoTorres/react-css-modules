@@ -17,7 +17,7 @@ class Home extends Component{
             <Container key={this.props.Type}>
                         <Row className={styles.main}>
                                 <Col md={6} sm={12} xs={12} >
-                                <h2>Find the best selection of Cocktails Recipes</h2>
+                                <h2>Find the Best Selection of Cocktail Recipes</h2>
                                 <p>Browse our menu and find recipes by type of drink.</p>
                                 </Col>
                                 <Col md={6} sm={12} xs={12} >
