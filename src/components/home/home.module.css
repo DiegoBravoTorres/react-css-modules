@@ -23,13 +23,45 @@
 
 .secondary {
   text-align: center;
-  background-color: white;
-  padding: 30px 50px;
+  background-color: #eb594c;
+  padding: 30px 100px;
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .secondary h2 {
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.sections {
+  padding: 70px 100px 30px;
+}
+
+.sections h2 {
+  font-size: 30px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 900;
+  padding-bottom: 40px;
+}
+
+.sections a {
+  font-size: 15px;
+  margin-left: 35px;
+  color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 37px;
+  margin-top: 14px;
+  cursor: pointer;
+  opacity: 70%;
+  border-color: #000000;
+  font-family: "Be Vietnam Pro", sans-serif;
+  padding: 8px 18px 12px 18px;
+  text-decoration: none;
+}
+.sections a:hover {
+  color: black;
+  opacity: 100%;
 }
 
 .secondary p {
@@ -43,14 +75,16 @@
 
 @media (max-width: 810px) {
   .main {
-    padding: 20px;
+    padding: 50px 20px;
   }
 
-  .main h2 {
-    font-size: 30px;
+  .main h2,
+  .sections h2,
+  .secondary h2 {
+    font-size: 26px;
     font-weight: 900;
     text-align: center;
-    padding: 20px 0px;
+    padding-bottom: 10px;
   }
   .main p {
     text-align: center;
@@ -58,5 +92,20 @@
 
   .image {
     width: 300px;
+  }
+
+  .secondary {
+    padding: 30px 50px;
+  }
+  .sections {
+    text-align: center;
+    padding: 40px 10px 0px;
+  }
+
+  .sections a {
+    margin-left: 9px;
+    margin-top: 14px;
+    padding: 8px 18px 12px 18px;
+    display: inline flow-root;
   }
 }
