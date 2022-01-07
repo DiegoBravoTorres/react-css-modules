@@ -38,7 +38,7 @@ class Drink extends Component {
                 <div className="App">
                     <div ref={this.title} className={styles.cardInfo} key={drink.id} onClick={this.changeDisplay}>
                      
-                            <ul className={styles.description} key={drink.id}>
+                            <ul className={styles.description} key={drink.id} style={{padding: "0"}} >
                                 { drink.strIngredient1 && <li> {drink.strIngredient1} <strong>{drink.strMeasure1} </strong></li>}
                                 { drink.strIngredient2 && <li> {drink.strIngredient2} <strong>{drink.strMeasure2} </strong></li>}
                                 { drink.strIngredient3 && <li> {drink.strIngredient3} <strong>{drink.strMeasure3} </strong></li>}
