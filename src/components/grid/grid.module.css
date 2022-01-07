@@ -75,7 +75,22 @@
 
 .description {
   font-size: 13px;
+  list-style-type: circle;
   transition: 1s;
+}
+
+ul {
+  margin: 0;
+}
+ul.description {
+  list-style-type: none;
+}
+ul.description > li {
+  text-indent: -5px;
+}
+ul.description > li:before {
+  content: "-";
+  text-indent: -5px;
 }
 
 .cardInst {

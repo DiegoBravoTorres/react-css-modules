@@ -37,19 +37,18 @@ class Drink extends Component {
             return (
                 <div className="App">
                     <div ref={this.title} className={styles.cardInfo} key={drink.id} onClick={this.changeDisplay}>
-                        <p className={styles.description} key={drink.id}>
-                            {drink.strIngredient1} <strong>{drink.strMeasure1} </strong>
-                            <br></br>
-                            {drink.strIngredient2} <strong>{drink.strMeasure2} </strong>
-                            <br></br>
-                            {drink.strIngredient3} <strong>{drink.strMeasure3} </strong>
-                            <br></br>
-                            {drink.strIngredient4} <strong>{drink.strMeasure4} </strong>
-                            <br></br>
-                            {drink.strIngredient5} <strong>{drink.strMeasure5} </strong>
-                            <br></br>
-                            {drink.strIngredient6} <strong>{drink.strMeasure6} </strong>                          
-                        </p>
+                     
+                            <ul className={styles.description} key={drink.id}>
+                                { drink.strIngredient1 && <li> {drink.strIngredient1} <strong>{drink.strMeasure1} </strong></li>}
+                                { drink.strIngredient2 && <li> {drink.strIngredient2} <strong>{drink.strMeasure2} </strong></li>}
+                                { drink.strIngredient3 && <li> {drink.strIngredient3} <strong>{drink.strMeasure3} </strong></li>}
+                                { drink.strIngredient4 && <li> {drink.strIngredient4} <strong>{drink.strMeasure4} </strong></li>}
+                                { drink.strIngredient5 && <li> {drink.strIngredient5} <strong>{drink.strMeasure5} </strong></li>}
+                                { drink.strIngredient6 && <li> {drink.strIngredient6} <strong>{drink.strMeasure6} </strong></li>}
+
+                            </ul>
+                                                   
+                     
                     </div>
                 </div>
             );

@@ -27,7 +27,7 @@ class Home extends Component {
 
                 <div className={styles.secondary}>
                     <Col md={12} sm={12} xs={12}>
-                        <h2>Just keep tapping</h2>
+                        <h2>Just Keep Tapping</h2>
                     </Col>
                     <Row>
                         <Col md={6} sm={12} xs={12}>
