@@ -45,7 +45,9 @@ class Drink extends Component {
                                 { drink.strIngredient4 && <li> {drink.strIngredient4} <strong>{drink.strMeasure4} </strong></li>}
                                 { drink.strIngredient5 && <li> {drink.strIngredient5} <strong>{drink.strMeasure5} </strong></li>}
                                 { drink.strIngredient6 && <li> {drink.strIngredient6} <strong>{drink.strMeasure6} </strong></li>}
-
+                                { drink.strIngredient7 && <li> {drink.strIngredient7} <strong>{drink.strMeasure7} </strong></li>}
+                                { drink.strIngredient8 && <li> {drink.strIngredient8} <strong>{drink.strMeasure8} </strong></li>}
+                                { drink.strIngredient9 && <li> {drink.strIngredient9} <strong>{drink.strMeasure9} </strong></li>}
                             </ul>
                                                    
                      
