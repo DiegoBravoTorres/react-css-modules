@@ -10,7 +10,6 @@ import Footer from "../nav/footer";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-//import InfoBox from './infoBox'
 
 class Drinks extends React.Component {
     constructor(props) {
