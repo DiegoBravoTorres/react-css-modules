@@ -40,8 +40,12 @@
 .title {
   margin-top: 30px;
   margin-bottom: 10px;
-  font-family: "Cherry Swash", cursive;
-  font-weight: 700;
+  font-family: "Be Vietnam Pro", sans-serif;
+  transition: 1s;
+}
+
+.titleCard {
+  margin-top: 0px !important;
   transition: 1s;
 }
 
@@ -95,18 +99,42 @@ ul.description > li:before {
 }
 
 .cardInst {
-  margin: 0;
+  width: 70%;
+  height: 300px;
+  z-index: 3;
+  text-align: left;
+  position: absolute;
+  background: #f8f9fa;
+  left: 15%;
+  margin-top: -300px;
   box-shadow: 8px 16px 16px 21px rgba(219, 218, 215, 0.5);
-  padding: 7px 7px;
+  padding: 30px 7px;
   transition: 1s;
   border-radius: 33px;
   font-family: "Be Vietnam Pro", sans-serif;
+  opacity: 0.987;
 }
 
 .instructions {
   padding: 10px;
+  padding-top: 0;
   font-size: 13px;
   font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.imgDesc {
+  display: none;
+}
+
+.clsBut {
+  font-size: 13px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  position: absolute;
+  background: none;
+  border: none;
+  bottom: 21px;
+  width: 90%;
+  left: 5%;
 }
 
 @media (max-width: 810px) {
@@ -122,12 +150,26 @@ ul.description > li:before {
   .title {
     font-size: 15px;
   }
+
+  .cardInst {
+    text-align: center;
+    width: 90%;
+    left: 5%;
+    height: 500px;
+    margin-top: -400px;
+  }
   .drinkscont {
     width: 100%;
   }
 
   .description {
     font-size: 11px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .imgDesc {
+    display: block;
   }
 
   .instructions {

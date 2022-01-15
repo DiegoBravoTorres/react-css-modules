@@ -110,6 +110,6 @@
     margin-left: 9px;
     margin-top: 14px;
     padding: 8px 18px 12px 18px;
-    display: inline flow-root;
+    display: inline-block;
   }
 }
