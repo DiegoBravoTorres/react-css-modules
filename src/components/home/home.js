@@ -29,18 +29,13 @@ class Home extends Component {
                     <Col md={12} sm={12} xs={12}>
                         <h2>Just Keep Tapping</h2>
                     </Col>
-                    <Row>
-                        <Col md={6} sm={12} xs={12}>
+                  <Row>
+                      
                             <p>
-                                <strong>Tap 1 </strong> Get the ingredient list
+                                Tap, get the ingredient list and instructions
                             </p>
-                        </Col>
-                        <Col md={6} sm={12} xs={12}>
-                            <p>
-                                <strong>Tap 2 </strong>Get the instructions
-                            </p>
-                        </Col>
-                    </Row>
+                    
+                    </Row> 
                 </div>
                 <div className={styles.sections}>
                     <h2>Start Mixing</h2>
