@@ -5,7 +5,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 //import { Link } from 'react-router-dom';
 
 // Data
-//import facts from './data/NASA_facts.json'; 
 import Home from './components/home/home';
 import Drinks from './components/grid/drinks';
 import NotFound from './components/nav/404';
@@ -32,8 +31,6 @@ class App extends Component{
         <BrowserRouter>
            <Routes>
            <Route exact path="/" element={ <Home/>} />
-        
-           
               <Route exact path="/caipirinha" element={<Drinks Type='Caipirinha'/>} />
               <Route exact path="/chocolate" element={<Drinks Type='Chocolate'/>} />
               <Route exact path="/collins" element={<Drinks Type='Collins'/>} />
