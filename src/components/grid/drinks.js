@@ -57,7 +57,7 @@ class Drinks extends React.Component {
                     <Container >
                         <Row className={styles.drinkscont} >
                             {drinks.map((drink) => (
-                                <Col md={3} sm={6} xs={6} key={`Sst ${drink.strDrink}`}>
+                                <Col md={3} sm={6} xs={6} key={`${drink.strDrink}`}>
                                     <Drink Item={drink} />
                                 </Col>
                             ))}

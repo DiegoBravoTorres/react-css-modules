@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400&display=swap");
 
@@ -31,10 +30,11 @@
 .head {
   text-align: center;
   margin-bottom: 30px;
-  margin-top: 7%;
+  margin-top: 5%;
   font-family: "Cherry Swash", cursive;
   font-size: 37px;
   font-weight: 600;
+  padding-top: 75px;
 }
 
 .title {
